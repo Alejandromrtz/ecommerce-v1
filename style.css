@@ -1,0 +1,317 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #EAEDED;
+}
+header{
+    background-color: #637074;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0,0.7) 0px 1px 2px 0px;
+    
+}
+/* navagation bar  */
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+}
+
+.nav-logo{
+    height: 50px ;
+    width: 75px;
+
+    
+}
+
+ul{
+    display: flex;
+    align-items:center ;
+
+    
+}
+
+a{
+    padding: 2px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+    
+}
+/* end of navagation bar */
+
+
+/* index.html or home page */
+.hero h1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url("/images/vintagewallrack.png");  /* linear-gradient darkens the background... helps reader */
+    height: 550px;
+    background-color: #cccccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.bestsellers{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;    
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 30px;
+    background-color: white;
+
+}
+
+.hero button {
+    height: 50px;
+    width: 176px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family:'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: black;
+    background-color: white;
+  }
+  .bs-cards .buttonz{
+      width: 150px;
+      background-color: #fff;
+      color: black;
+
+  }
+
+
+
+
+
+/* THIS IS THE PRODUCTS PAGE */
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url("/images/shirtrack.webp");  /* linear-gradient darkens the background... helps reader */
+    height: 250px;
+    background-color: #cccccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+/* contact page : faded the background, added forms and gave it a font, used glassmorphism as well for the form */
+.eyecontact{
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url("/images/kawsweeping.jpeg");  /* linear-gradient darkens the background... helps reader */
+    min-height: calc(100vh - 70px);
+    background-color: #cccccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+
+  .eyecontact h1 {
+      padding-top: 30px;
+  }
+  .eyecontact p {
+      padding: 30px 30px 30px 30px;
+  }
+
+form{
+    padding: 20px;
+    font-size: 25px;
+    background: rgba(209, 208, 208, 0.24);
+    width: 30%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.2px);
+    border: 1px solid rgba(209, 208, 208, 0.24);
+}
+
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+button{
+    background-color: #637074;
+    color: #fff;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+}
+
+/* for mobile compatibility*/
+@media screen and (max-width: 800px) {
+    nav{
+        display: flex;
+    }
+    .eyecontact p{
+        font-size: 20px;
+    }
+    form{
+        margin: 0 auto;
+        width: 80%;
+    }
+    nav a {
+        font-size: 15px;
+    }
+    .bestsellers{
+        padding-top: 20px;
+    }
+    .bs-cards{
+        margin-bottom: 30px;
+        margin-top: 25px;
+        width: 60%;
+        background-color: beige;
+        box-shadow: 0px 14px 32px 0px rgba(0, 0, 0,0.15);
+        
+    }
+    .bs-cards img{
+        width: 100%;
+        height: 200px;
+    }
+    .bs-cards h1{
+
+        font-size: 20px;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+    .bs-cards p{
+        font-size: 15px;
+        font-family: 'Libre Franklin', sans-serif ;
+    }
+    .bs-cards div{
+        padding: 5px 0 5px 20px;
+        
+    }
+
+    /* PRODUCT PAGE */
+    aside{
+        display: none;
+    }
+
+
+
+/* ALL */
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .bs-cards{
+        margin: 10px;
+        margin-bottom: 30px;
+        margin-top: 25px;
+        width: 40%;
+        background-color: beige;
+        box-shadow: 0px 14px 32px 0px rgba(0, 0, 0,0.15);
+        
+    }
+    .bs-cards img{
+        width: 100%;
+        height: 250px;
+    }
+    .bs-cards h1{
+
+        font-size: 20px;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+    .bs-cards p{
+    
+        font-size: 15px;
+        font-family: 'Libre Franklin', sans-serif ;
+    }
+    .bs-cards div{
+        padding: 5px 0 5px 20px;
+        
+    }
+    .section-title{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+    .bestsellers{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        height: 100%;    
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 30px;
+        background-color: white;
+    
+    }
+    aside{
+        width: 20%;
+        background-color: sandybrown;
+    }
+    .product-all{
+        padding: 10px;
+        width: 80%;
+        height: 100%;
+        background-color: beige;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+}
